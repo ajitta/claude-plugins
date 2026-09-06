@@ -1,0 +1,23 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "ajitta",
+  "description": "ajitta's Claude Code plugins. A catalog only — each plugin lives in its own repository and is versioned there.",
+  "owner": {
+    "name": "ajitta",
+    "email": "ajitta@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "game-engagement-retention-skills",
+      "source": { "source": "github", "repo": "ajitta/Game-Engagement-Retention-Skills" },
+      "description": "Three routed skills for designing in-session reward moments and lifecycle retention for games and consumer interactive apps — the scene, the cohort, and the link between them.",
+      "category": "productivity"
+    },
+    {
+      "name": "unknowns",
+      "source": { "source": "github", "repo": "ajitta/know-your-unknowns" },
+      "description": "Know your unknowns — an operational loop for finding and managing the gaps between the map (plan) and the territory (reality). 11 skills, 2 agents, 2 hooks across pre-implementation, implementation and post-implementation.",
+      "category": "productivity"
+    }
+  ]
+}
