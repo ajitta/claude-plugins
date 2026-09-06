@@ -22,6 +22,14 @@ Then install what you want:
 | `game-engagement-retention-skills` | Reward-moment design and lifecycle retention for games and consumer interactive apps | [Game-Engagement-Retention-Skills](https://github.com/ajitta/Game-Engagement-Retention-Skills) |
 | `unknowns` | An operational loop for the gaps between the plan and reality | [know-your-unknowns](https://github.com/ajitta/know-your-unknowns) |
 
+## Why explicit HTTPS URLs
+
+Each entry uses a `url` source with a full `https://` git URL rather than the
+`owner/repo` shorthand. Claude Code clones shorthand sources over SSH by default,
+which fails outright for anyone without a key configured — the marketplace itself
+falls back to HTTPS, but a plugin install does not. Spelling the URL out keeps the
+install working regardless of the reader's git setup.
+
 ## Updating
 
 `/plugin marketplace update ajitta` refreshes this catalog. Installing or
