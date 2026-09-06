@@ -8,7 +8,7 @@
   },
   "plugins": [
     {
-      "name": "game-engagement-retention-skills",
+      "name": "game-engagement-retention",
       "source": {
         "source": "url",
         "url": "https://github.com/ajitta/Game-Engagement-Retention-Skills.git"
