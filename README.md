@@ -1,19 +1,9 @@
 # ajitta's Claude Code plugins
 
-A marketplace catalog. It holds no plugin code — every entry points at the
-repository that owns that plugin, so each one is versioned and released on its
-own.
-
-```
-/plugin marketplace add ajitta/claude-plugins
-```
-
-Then install what you want:
-
-```
-/plugin install game-engagement-retention@ajitta
-/plugin install unknowns@ajitta
-```
+A catalog of ajitta's plugins. It holds no plugin code. **Each plugin serves
+itself from its own repository**, and that is the recommended way to install
+it. This catalog lists them side by side and is a second route to the same
+code.
 
 ## Plugins
 
@@ -22,11 +12,41 @@ Then install what you want:
 | `game-engagement-retention` | Reward-moment design and lifecycle retention for games and consumer interactive apps | [Game-Engagement-Retention-Skills](https://github.com/ajitta/Game-Engagement-Retention-Skills) |
 | `unknowns` | An operational loop for the gaps between the plan and reality | [know-your-unknowns](https://github.com/ajitta/know-your-unknowns) |
 
+## Install (recommended): straight from the plugin's repository
+
+```
+/plugin marketplace add ajitta/Game-Engagement-Retention-Skills
+/plugin install game-engagement-retention@game-engagement-retention-skills
+```
+
+```
+/plugin marketplace add ajitta/know-your-unknowns
+/plugin install unknowns@know-your-unknowns
+```
+
+The suffix after `@` is the marketplace name each repository declares, not the
+owner.
+
+## Install through this catalog
+
+This route still works and is still maintained:
+
+```
+/plugin marketplace add ajitta/claude-plugins
+/plugin install game-engagement-retention@ajitta
+/plugin install unknowns@ajitta
+```
+
+Both routes install the same code, from the plugin's own repository, at the
+version its `plugin.json` declares. You do not need to switch if you already
+installed through `@ajitta`. Installing the same plugin through both routes
+gives you two copies of every skill, so pick one.
+
 ## Why explicit HTTPS URLs
 
 Each entry uses a `url` source with a full `https://` git URL rather than the
 `owner/repo` shorthand. Claude Code clones shorthand sources over SSH by default,
-which fails outright for anyone without a key configured — the marketplace itself
+which fails outright for anyone without a key configured. The marketplace itself
 falls back to HTTPS, but a plugin install does not. Spelling the URL out keeps the
 install working regardless of the reader's git setup.
 

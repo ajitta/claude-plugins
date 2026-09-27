@@ -1,7 +1,7 @@
 {
   "$schema": "https://code.claude.com/schemas/marketplace.json",
   "name": "ajitta",
-  "description": "ajitta's Claude Code plugins. A catalog only — each plugin lives in its own repository and is versioned there.",
+  "description": "ajitta's Claude Code plugins, side by side. A catalog only: each plugin also serves itself from its own repository, which is the recommended install.",
   "owner": {
     "name": "ajitta",
     "email": "ajitta@gmail.com"
