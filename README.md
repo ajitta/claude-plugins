@@ -11,8 +11,6 @@ code.
 |---|---|---|
 | `game-engagement-retention` | Reward-moment design and lifecycle retention for games and consumer interactive apps | [Game-Engagement-Retention-Skills](https://github.com/ajitta/Game-Engagement-Retention-Skills) |
 | `unknowns` | An operational loop for the gaps between the plan and reality | [know-your-unknowns](https://github.com/ajitta/know-your-unknowns) |
-| `socratic-brainstorm` | Socratic questioning that tests an idea, then options, convergence and a brief | [superclaude/portable-skills](https://github.com/ajitta/superclaude/tree/master/portable-skills) |
-| `socratic-elenchus` | Plato's elenchus: what is X, contradiction from your own premises, aporia; no advice | [superclaude/portable-skills](https://github.com/ajitta/superclaude/tree/master/portable-skills) |
 
 ## Install (recommended): straight from the plugin's repository
 
@@ -26,12 +24,6 @@ code.
 /plugin install unknowns@know-your-unknowns
 ```
 
-```
-/plugin marketplace add ajitta/superclaude
-/plugin install socratic-brainstorm@ajitta-socratic
-/plugin install socratic-elenchus@ajitta-socratic
-```
-
 The suffix after `@` is the marketplace name each repository declares, not the
 owner.
 
@@ -43,8 +35,6 @@ This route still works and is still maintained:
 /plugin marketplace add ajitta/claude-plugins
 /plugin install game-engagement-retention@ajitta
 /plugin install unknowns@ajitta
-/plugin install socratic-brainstorm@ajitta
-/plugin install socratic-elenchus@ajitta
 ```
 
 Both routes install the same code, from the plugin's own repository, at the
