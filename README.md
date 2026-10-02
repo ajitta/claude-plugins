@@ -44,8 +44,10 @@ gives you two copies of every skill, so pick one.
 
 ## Why explicit HTTPS URLs
 
-Each entry uses a `url` source with a full `https://` git URL rather than the
-`owner/repo` shorthand. Claude Code clones shorthand sources over SSH by default,
+Each entry gives a full `https://` git URL rather than the `owner/repo`
+shorthand. `game-engagement-retention` is a `git-subdir` source with
+`path: plugin`, because that repository serves the plugin from `plugin/` as of
+3.3.0; `unknowns` is a `url` source at its repository root. Claude Code clones shorthand sources over SSH by default,
 which fails outright for anyone without a key configured. The marketplace itself
 falls back to HTTPS, but a plugin install does not. Spelling the URL out keeps the
 install working regardless of the reader's git setup.

@@ -10,8 +10,9 @@
     {
       "name": "game-engagement-retention",
       "source": {
-        "source": "url",
-        "url": "https://github.com/ajitta/Game-Engagement-Retention-Skills.git"
+        "source": "git-subdir",
+        "url": "https://github.com/ajitta/Game-Engagement-Retention-Skills.git",
+        "path": "plugin"
       },
       "description": "Three routed skills for designing in-session reward moments and lifecycle retention for games and consumer interactive apps — the scene, the cohort, and the link between them.",
       "category": "productivity"
