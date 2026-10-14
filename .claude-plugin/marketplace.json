@@ -23,7 +23,7 @@
         "source": "url",
         "url": "https://github.com/ajitta/know-your-unknowns.git"
       },
-      "description": "Know your unknowns — an operational loop for finding and managing the gaps between the map (plan) and the territory (reality). 11 skills, 2 agents, 2 hooks across pre-implementation, implementation and post-implementation.",
+      "description": "Know your unknowns — an operating loop for the gap between the map (your plan) and the territory (the actual code and domain). Eleven skills: blind-spot investigation, domain primers, interviews, divergent prototypes, brainstorming, reference analysis, tweak-likelihood-ordered planning, deviation notes, buy-in docs and comprehension quizzes — plus two agents and two hooks.",
       "category": "productivity"
     }
   ]
