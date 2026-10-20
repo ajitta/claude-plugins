@@ -11,6 +11,7 @@ code.
 |---|---|---|
 | `game-engagement-retention` | Reward-moment design and lifecycle retention for games and consumer interactive apps | [Game-Engagement-Retention-Skills](https://github.com/ajitta/Game-Engagement-Retention-Skills) |
 | `unknowns` | An operating loop for the gap between the plan and reality | [know-your-unknowns](https://github.com/ajitta/know-your-unknowns) |
+| `dia` | Seven reasoning-and-review skills: intent confirmation, Socratic elenchus and brainstorming, reductio, negative dialectics, single-pass refine and verification-gated iteration | [dialectic-skills](https://github.com/ajitta/dialectic-skills) |
 
 ## Install (recommended): straight from the plugin's repository
 
@@ -24,6 +25,11 @@ code.
 /plugin install unknowns@know-your-unknowns
 ```
 
+```
+/plugin marketplace add ajitta/dialectic-skills
+/plugin install dia@dialectic-skills
+```
+
 The suffix after `@` is the marketplace name each repository declares, not the
 owner.
 
@@ -35,6 +41,7 @@ This route still works and is still maintained:
 /plugin marketplace add ajitta/claude-plugins
 /plugin install game-engagement-retention@ajitta
 /plugin install unknowns@ajitta
+/plugin install dia@ajitta
 ```
 
 Both routes install the same code, from the plugin's own repository, at the
@@ -47,7 +54,7 @@ gives you two copies of every skill, so pick one.
 Each entry gives a full `https://` git URL rather than the `owner/repo`
 shorthand. `game-engagement-retention` is a `git-subdir` source with
 `path: plugin`, because that repository serves the plugin from `plugin/` as of
-3.3.0; `unknowns` is a `url` source at its repository root. Claude Code clones shorthand sources over SSH by default,
+3.3.0; `unknowns` is a `url` source at its repository root; `dia` is a `git-subdir` source with `path: plugins/dia`, the generated plugin folder in dialectic-skills. Claude Code clones shorthand sources over SSH by default,
 which fails outright for anyone without a key configured. The marketplace itself
 falls back to HTTPS, but a plugin install does not. Spelling the URL out keeps the
 install working regardless of the reader's git setup.
