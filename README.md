@@ -54,7 +54,7 @@ gives you two copies of every skill, so pick one.
 Each entry gives a full `https://` git URL rather than the `owner/repo`
 shorthand. `game-engagement-retention` is a `git-subdir` source with
 `path: plugin`, because that repository serves the plugin from `plugin/` as of
-3.3.0; `unknowns` is a `url` source at its repository root; `dia` is a `git-subdir` source with `path: plugins/dia`, the generated plugin folder in dialectic-skills. Claude Code clones shorthand sources over SSH by default,
+3.3.0; `unknowns` is a `git-subdir` source with `path: plugins/unknowns`, the generated plugin folder in know-your-unknowns as of 0.10.0; `dia` is a `git-subdir` source with `path: plugins/dia`, the generated plugin folder in dialectic-skills. Claude Code clones shorthand sources over SSH by default,
 which fails outright for anyone without a key configured. The marketplace itself
 falls back to HTTPS, but a plugin install does not. Spelling the URL out keeps the
 install working regardless of the reader's git setup.
