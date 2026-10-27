@@ -10,7 +10,7 @@ code.
 | Plugin | What it does | Repository |
 |---|---|---|
 | `game-engagement-retention` | Reward-moment design and lifecycle retention for games and consumer interactive apps | [Game-Engagement-Retention-Skills](https://github.com/ajitta/Game-Engagement-Retention-Skills) |
-| `unknowns` | An operating loop for the gap between the plan and reality | [know-your-unknowns](https://github.com/ajitta/know-your-unknowns) |
+| `unknowns` | Skills for what you, the AI, or neither of you knows yet, in any domain | [know-your-unknowns](https://github.com/ajitta/know-your-unknowns) |
 | `dia` | Seven reasoning-and-review skills: intent confirmation, Socratic elenchus and brainstorming, reductio, negative dialectics, single-pass refine and verification-gated iteration | [dialectic-skills](https://github.com/ajitta/dialectic-skills) |
 
 ## Install (recommended): straight from the plugin's repository
