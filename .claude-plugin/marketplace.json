@@ -34,7 +34,7 @@
         "url": "https://github.com/ajitta/dialectic-skills.git",
         "path": "plugins/dia"
       },
-      "description": "Seven reasoning-and-review skills: intent confirmation, Socratic elenchus and brainstorming, reductio ad absurdum, negative dialectics, single-pass refine and verification-gated iteration.",
+      "description": "Thirteen reasoning-and-review skills plus a dia menu: intent confirmation, Socratic elenchus and brainstorming, reductio, internal critique, argument warrants, counterexamples, counterplans, single-pass refine, verification-gated rounds, adjudicating review reports, writing for models, and deepening a request as a field's top practitioners would.",
       "category": "productivity"
     }
   ]
