@@ -34,7 +34,7 @@
         "url": "https://github.com/ajitta/dialectic-skills.git",
         "path": "plugins/dia"
       },
-      "description": "Thirteen reasoning-and-review skills plus a dia menu: intent confirmation, Socratic elenchus and brainstorming, reductio, internal critique, argument warrants, counterexamples, counterplans, single-pass refine, verification-gated rounds, adjudicating review reports, writing for models, and deepening a request as a field's top practitioners would.",
+      "description": "Thirteen reasoning-and-review skills plus the dia router: goal confirmation (skopos), Socratic elenchus and inquiry (quaestio), reductio, internal critique, argument warrants, counterexamples, counterplans, a single review pass (emend), verification-gated rounds, adjudicating review reports, rules for text a model follows (regula), and deepening a request as a field's top practitioners would; a skill starts when the message begins with dia or its name.",
       "category": "productivity"
     }
   ]

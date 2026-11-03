@@ -11,7 +11,7 @@ code.
 |---|---|---|
 | `game-engagement-retention` | Reward-moment design and lifecycle retention for games and consumer interactive apps | [Game-Engagement-Retention-Skills](https://github.com/ajitta/Game-Engagement-Retention-Skills) |
 | `unknowns` | Skills for what you, the AI, or neither of you knows yet, in any domain | [know-your-unknowns](https://github.com/ajitta/know-your-unknowns) |
-| `dia` | Thirteen reasoning-and-review skills plus a dia menu: intent confirmation, Socratic elenchus and brainstorming, reductio, internal critique, argument warrants, counterexamples, counterplans, single-pass refine, verification-gated rounds, adjudicating review reports, writing for models, and deepening a request as a field's top practitioners would | [dialectic-skills](https://github.com/ajitta/dialectic-skills) |
+| `dia` | Thirteen reasoning-and-review skills plus the dia router: goal confirmation (skopos), Socratic elenchus and inquiry (quaestio), reductio, internal critique, argument warrants, counterexamples, counterplans, a single review pass (emend), verification-gated rounds, adjudicating review reports, rules for text a model follows (regula), and deepening a request as a field's top practitioners would; a skill starts when the message begins with dia or its name | [dialectic-skills](https://github.com/ajitta/dialectic-skills) |
 
 ## Install (recommended): straight from the plugin's repository
 
