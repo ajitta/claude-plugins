@@ -36,6 +36,19 @@
       },
       "description": "Thirteen reasoning-and-review skills plus the dia router: goal confirmation (skopos), Socratic elenchus and inquiry (quaestio), reductio, internal critique, argument warrants, counterexamples, counterplans, a single review pass (emend), verification-gated rounds, adjudicating review reports, rules for text a model follows (regula), and deepening a request as a field's top practitioners would; a skill starts when the message begins with dia or its name.",
       "category": "productivity"
+    },
+    {
+      "name": "dia-panel",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ajitta/dialectic-skills.git",
+        "path": "companions/dia-panel"
+      },
+      "description": "Claude Code only: a workflow that runs the four dia review lenses on one document in parallel and has dia-adjudicate judge their whole reports twice, in two orders. Installs dia with it.",
+      "category": "productivity",
+      "dependencies": [
+        "dia"
+      ]
     }
   ]
 }
