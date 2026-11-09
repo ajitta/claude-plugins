@@ -49,6 +49,16 @@
       "dependencies": [
         "dia"
       ]
+    },
+    {
+      "name": "karpathy-regula",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/ajitta/karpathy-regula.git",
+        "path": "plugins/karpathy-regula"
+      },
+      "description": "Karpathy's coding guidelines, revised with dia-regula.",
+      "category": "productivity"
     }
   ]
 }

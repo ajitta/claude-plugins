@@ -13,6 +13,7 @@ code.
 | `unknowns` | Skills for what you, the AI, or neither of you knows yet, in any domain | [know-your-unknowns](https://github.com/ajitta/know-your-unknowns) |
 | `dia` | Thirteen reasoning-and-review skills plus the dia router: goal confirmation (skopos), Socratic elenchus and inquiry (quaestio), reductio, internal critique, argument warrants, counterexamples, counterplans, a single review pass (emend), verification-gated rounds, adjudicating review reports, rules for text a model follows (regula), and deepening a request as a field's top practitioners would; a skill starts when the message begins with dia or its name | [dialectic-skills](https://github.com/ajitta/dialectic-skills) |
 | `dia-panel` | Claude Code only: a workflow that runs four dia review skills on one document in parallel and has `dia-adjudicate` judge their reports twice; installs `dia` with it | [dialectic-skills](https://github.com/ajitta/dialectic-skills) |
+| `karpathy-regula` | Karpathy's coding guidelines (think before coding, keep it simple, make scoped changes, define verifiable goals), revised with dia-regula; an unofficial adaptation | [karpathy-regula](https://github.com/ajitta/karpathy-regula) |
 
 ## Install (recommended): straight from the plugin's repository
 
@@ -32,6 +33,11 @@ code.
 /plugin install dia-panel@dialectic-skills   # optional, Claude Code only
 ```
 
+```
+/plugin marketplace add ajitta/karpathy-regula
+/plugin install karpathy-regula@karpathy-regula
+```
+
 The suffix after `@` is the marketplace name each repository declares, not the
 owner.
 
@@ -45,6 +51,7 @@ This route still works and is still maintained:
 /plugin install unknowns@ajitta
 /plugin install dia@ajitta
 /plugin install dia-panel@ajitta   # optional, Claude Code only
+/plugin install karpathy-regula@ajitta
 ```
 
 Both routes install the same code, from the plugin's own repository, at the
@@ -57,7 +64,7 @@ gives you two copies of every skill, so pick one.
 Each entry gives a full `https://` git URL rather than the `owner/repo`
 shorthand. `game-engagement-retention` is a `git-subdir` source with
 `path: plugin`, because that repository serves the plugin from `plugin/` as of
-3.3.0; `unknowns` is a `git-subdir` source with `path: plugins/unknowns`, the generated plugin folder in know-your-unknowns as of 0.10.0; `dia` is a `git-subdir` source with `path: plugins/dia`, the generated plugin folder in dialectic-skills. `dia-panel` is a `git-subdir` source with `path: companions/dia-panel` in the same repository; its dependency `dia` resolves in whichever of the two marketplaces it is installed from. Claude Code clones shorthand sources over SSH by default,
+3.3.0; `unknowns` is a `git-subdir` source with `path: plugins/unknowns`, the generated plugin folder in know-your-unknowns as of 0.10.0; `dia` is a `git-subdir` source with `path: plugins/dia`, the generated plugin folder in dialectic-skills. `dia-panel` is a `git-subdir` source with `path: companions/dia-panel` in the same repository; its dependency `dia` resolves in whichever of the two marketplaces it is installed from. `karpathy-regula` is a `git-subdir` source with `path: plugins/karpathy-regula`. Claude Code clones shorthand sources over SSH by default,
 which fails outright for anyone without a key configured. The marketplace itself
 falls back to HTTPS, but a plugin install does not. Spelling the URL out keeps the
 install working regardless of the reader's git setup.
