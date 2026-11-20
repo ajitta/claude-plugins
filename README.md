@@ -13,7 +13,7 @@ code.
 | `unknowns` | Skills for what you, the AI, or neither of you knows yet, in any domain | [know-your-unknowns](https://github.com/ajitta/know-your-unknowns) |
 | `dia` | Thirteen reasoning-and-review skills plus the dia router: goal confirmation (skopos), Socratic elenchus and inquiry (quaestio), reductio, internal critique, argument warrants, counterexamples, counterplans, a single review pass (emend), verification-gated rounds, adjudicating review reports, rules for text a model follows (regula), and deepening a request as a field's top practitioners would; a skill starts when the message begins with dia or its name | [dialectic-skills](https://github.com/ajitta/dialectic-skills) |
 | `dia-panel` | Claude Code only: two workflows. `review-panel` runs four dia review skills on one document in parallel and has `dia-adjudicate` judge their reports twice; `judge` makes the same two judgments on reports written elsewhere; installs `dia` with it | [dialectic-skills](https://github.com/ajitta/dialectic-skills) |
-| `karpathy-regula` | Karpathy's coding guidelines (think before coding, keep it simple, make scoped changes, define verifiable goals), revised with dia-regula; an unofficial adaptation | [karpathy-regula](https://github.com/ajitta/karpathy-regula) |
+| `karpathy-regula` | Karpathy's coding guidelines (think before coding, keep it simple, make scoped changes, define verifiable goals), revised with dia-regula, plus rules from 0.3.0 that are not in the original (work out the outcome a request is for, bound a further change, call work complete only on a check); an unofficial adaptation | [karpathy-regula](https://github.com/ajitta/karpathy-regula) |
 
 ## Install (recommended): straight from the plugin's repository
 
